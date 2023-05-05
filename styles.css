@@ -1,0 +1,232 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(img/space-small.jpg);
+}
+
+.wrapper {
+    height: 100%;
+    width: 100%;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.neptune-container {
+    position: absolute;
+    height: 850px;
+    width: 850px;
+    border-radius: 100%;
+    display:  flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    animation: orbit 5000ms linear infinite;
+}
+
+.neptune-container > img {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+}
+
+/* .neptune-container::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 18em;
+    height: 18em;
+    background-color: silver;
+    content: "";
+    border-radius: 50%;
+} */
+
+.neptune-container > .one {
+    animation: neptune-square 5395ms linear infinite;
+}
+
+.neptune-container > .two {
+    animation: neptune-square-two 5395ms linear infinite;
+}
+
+.neptune-container > .three {
+    animation: neptune-square-three 5395ms linear infinite;
+}
+
+.neptune-container > .four {
+    animation: neptune-square-four 5395ms linear infinite;
+}
+
+.neptune-container > .one-mars {
+    animation: mars-square 5395ms linear infinite;
+}
+
+.neptune-container > .two-mars {
+    animation: mars-square-two 5395ms linear infinite;
+}
+
+.neptune-container > .three-mars {
+    animation: mars-square-three 5395ms linear infinite;
+}
+
+.neptune-container > .four-mars {
+    animation: mars-square-four 5395ms linear infinite;
+}
+
+@keyframes orbit {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes neptune-square {
+    0% {
+        transform: translateY(-425px);
+    }
+
+    50% {
+        transform: translateY(425px);
+    }
+
+    100% {
+        transform: translateY(-425px);
+    }
+}
+
+@keyframes neptune-square-two {
+    0% {
+        transform: translateY(425px);
+    }
+
+    50% {
+        transform: translateY(-425px);
+    }
+
+    100% {
+        transform: translateY(425px);
+    }
+}
+
+@keyframes neptune-square-three {
+    0% {
+        transform: translateX(425px);
+    }
+
+    50% {
+        transform: translateX(-425px);
+    }
+
+    100% {
+        transform: translateX(425px);
+    }
+}
+
+@keyframes neptune-square-four {
+    0% {
+        transform: translateX(-425px);
+    }
+
+    50% {
+        transform: translateX(425px);
+    }
+
+    100% {
+        transform: translateX(-425px);
+    }
+}
+
+@keyframes mars-square {
+    0% {
+        transform: translate(0px);
+    }
+
+    25% {
+        transform: translate(-425px);
+    }
+
+    50% {
+        transform: translate(0px);
+    }
+
+    75% {
+        transform: translate(425px);
+    }
+
+    100% {
+        transform: translate(0px);
+    }
+}
+
+@keyframes mars-square-two {
+    0% {
+        transform: translate(0px);
+    }
+
+    25% {
+        transform: translate(425px);
+    }
+
+    50% {
+        transform: translate(0px);
+    }
+
+    75% {
+        transform: translate(-425px);
+    }
+
+    100% {
+        transform: translate(0px);
+    }
+}
+
+@keyframes mars-square-three {
+    0% {
+        transform: translateY(0px);
+    }
+
+    25% {
+        transform: translateY(-425px);
+    }
+
+    50% {
+        transform: translateY(0px);
+    }
+
+    75% {
+        transform: translateY(425px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes mars-square-four {
+    0% {
+        transform: translateY(0px);
+    }
+
+    25% {
+        transform: translateY(425px);
+    }
+
+    50% {
+        transform: translateY(0px);
+    }
+
+    75% {
+        transform: translateY(-425px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
